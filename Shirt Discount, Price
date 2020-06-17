@@ -1,0 +1,62 @@
+Class Solution has predefined main method to read values and display the results.  
+main method reads the value for five objects of class Shirt. 
+It also calls methods - getDiscountPrice and getShirtWithMoreThanSpecificPrice defined in same Solution class.  
+Code inside main method should not be altered else your solution might be scored as zero. You may copy the code from main method in eclipse to verify your implementation. 
+
+Guidelines to implement the code: 
+Create class Shirt with attributes:
+ 
+int tag
+String brand
+double price
+char gender  
+Create constructor which takes parameters in above sequence. Create getters and setters for these attributes.  
+Next, in Solution class, define two static methods as below:
+public static double getDiscountPrice(Shirt s):
+This method will return the discounted price based on gender for the Shirt object which is passed as input parameter. 
+If gender is 'm' then discount is 10%. For 'f' it is 20% and for 'u' it is 30%. 
+
+public static Shirt[] getShirtWithMoreThanSpecificPrice(Shirt[] shirts,double price):
+This method will take array of Shirt objects and price value.
+The method will return array of Shirt objects with more than specified price in ascending order of price. 
+Main method already has Scanner code to read values, create objects and test above methods.
+Main method reads values for five Shirt objects, followed by price.
+Price will be input for method getShirtWithMoreThanSpecificPrice.
+
+ 
+You can consider below sample input and output to verify your implementation before submitting in Hackerrank.  
+Sample input:
+ 
+1
+arrow
+500
+m
+2
+bare
+600
+f
+3
+arrow
+400
+m
+4
+bare
+300
+m
+5
+arrow
+1000
+u
+500
+ 
+ 
+ 
+Sample output:
+ 
+450.0
+480.0
+360.0
+270.0
+700.0
+2 600.0 bare
+5 1000.0 arrow
